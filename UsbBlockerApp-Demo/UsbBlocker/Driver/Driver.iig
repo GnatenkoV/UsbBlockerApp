@@ -1,0 +1,29 @@
+//
+//  Driver.iig
+//  Driver
+//
+
+#ifndef Driver_h
+#define Driver_h
+
+#include <Availability.h>
+#include <USBDriverKit/IOUSBHostDevice.iig>
+#include <DriverKit/IOUserClient.iig>
+
+class Driver: public IOUSBHostDevice
+{
+public:
+    virtual bool init(void) override;
+    virtual kern_return_t Start(IOService* provider) override;
+    virtual kern_return_t Stop(IOService* provider) override;
+    virtual void free(void) override;
+
+    virtual kern_return_t NewUserClient(uint32_t type, IOUserClient** userClient) override;
+    
+    bool ConfigureUSBDevice(bool enable) LOCALONLY;
+    
+protected:
+    void ObtainConfigurationValue() LOCALONLY;
+};
+
+#endif /* Driver_h */

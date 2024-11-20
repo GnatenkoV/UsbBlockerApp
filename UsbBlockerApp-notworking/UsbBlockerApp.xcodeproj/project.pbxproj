@@ -45,6 +45,16 @@
 		CED13D712CEDED7E001EDE28 /* DriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DriverKit.framework; path = System/Library/Frameworks/DriverKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CED13D7C2CEDED7E001EDE28 /* Exceptions for "UsbBlockerDriver" folder in "UsbBlockerDriver" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CED13D6E2CEDED7E001EDE28 /* UsbBlockerDriver */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CED13D5A2CEDEBCC001EDE28 /* UsbBlockerApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -53,6 +63,9 @@
 		};
 		CED13D732CEDED7E001EDE28 /* UsbBlockerDriver */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CED13D7C2CEDED7E001EDE28 /* Exceptions for "UsbBlockerDriver" folder in "UsbBlockerDriver" target */,
+			);
 			path = UsbBlockerDriver;
 			sourceTree = "<group>";
 		};

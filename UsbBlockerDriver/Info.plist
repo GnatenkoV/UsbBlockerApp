@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>Driver</key>
+		<dict>
+			<key>CFBundleIdentifierKernel</key>
+			<string>com.apple.kpi.iokit</string>
+			<key>IOClass</key>
+			<string>IOUserService</string>
+			<key>IOMatchCategory</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBHostDevice</string>
+			<key>IOResourceMatch</key>
+			<string>IOKit</string>
+			<key>IOUserClass</key>
+			<string>UsbBlockerDriver</string>
+			<key>IOUserServerName</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>UserClientProperties</key>
+			<dict>
+				<key>IOUserClass</key>
+				<string>UsbBlockerUserClient</string>
+				<key>IOClass</key>
+				<string>IOUserUserClient</string>
+			</dict>
+			<key>idProduct</key>
+			<string>*</string>
+			<key>idVendor</key>
+			<string>*</string>
+			<key>bcdDevice</key>
+			<string>*</string>
+		</dict>
+	</dict>
+	<key>OSBundleUsageDescription</key>
+	<string></string>
+</dict>
+</plist>

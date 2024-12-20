@@ -1,0 +1,25 @@
+#ifndef UsbBlockerUserClient_h
+#define UsbBlockerUserClient_h
+
+#include <Availability.h>
+#include <DriverKit/IOUserClient.iig>
+#include "UsbBlockerDriver.iig"
+
+class UsbBlockerUserClient: public IOUserClient
+{
+public:
+    virtual bool init(void) override;
+    virtual kern_return_t Start(IOService* provider) override;
+    virtual kern_return_t Stop(IOService* provider) override;
+    virtual void free(void) override;
+    
+    virtual kern_return_t ExternalMethod(uint64_t selector, IOUserClientMethodArguments* arguments, const IOUserClientMethodDispatch* dispatch, OSObject* target, void* reference) override;
+    
+    void SetParent(IOService* parent) LOCALONLY;
+    
+protected:
+    static kern_return_t StaticConfigureUSBDevice(OSObject* target, void* reference, IOUserClientMethodArguments* arguments) LOCALONLY;
+    kern_return_t ConfigureUSBDevice(void* reference, IOUserClientMethodArguments* arguments) LOCALONLY;
+};
+
+#endif /* UsbBlockerUserClient_h */

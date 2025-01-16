@@ -16,7 +16,6 @@
 		CE6669982C68D3380081ED67 /* UsbBlockerUserClient.iig in Sources */ = {isa = PBXBuildFile; fileRef = CE6669972C68D3380081ED67 /* UsbBlockerUserClient.iig */; };
 		CE66699A2C68D35C0081ED67 /* UsbBlockerUserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE6669992C68D35C0081ED67 /* UsbBlockerUserClient.cpp */; };
 		CE66699C2C68D5190081ED67 /* USBDriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE66699B2C68D5190081ED67 /* USBDriverKit.framework */; };
-		CEF36BAE2D144D4B00D60B0D /* libswift_stdio.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF36BAD2D144D3B00D60B0D /* libswift_stdio.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 		CE6669992C68D35C0081ED67 /* UsbBlockerUserClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UsbBlockerUserClient.cpp; sourceTree = "<group>"; };
 		CE66699B2C68D5190081ED67 /* USBDriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = USBDriverKit.framework; path = Platforms/DriverKit.platform/Developer/SDKs/DriverKit.sdk/System/DriverKit/System/Library/Frameworks/USBDriverKit.framework; sourceTree = DEVELOPER_DIR; };
 		CE6669A02C68DD200081ED67 /* UsbBlockerDriver.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = UsbBlockerDriver.entitlements; sourceTree = "<group>"; };
-		CEF36BAD2D144D3B00D60B0D /* libswift_stdio.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswift_stdio.tbd; path = Platforms/DriverKit.platform/Developer/SDKs/DriverKit24.2.sdk/System/DriverKit/usr/lib/swift/libswift_stdio.tbd; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -77,7 +75,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE66699C2C68D5190081ED67 /* USBDriverKit.framework in Frameworks */,
-				CEF36BAE2D144D4B00D60B0D /* libswift_stdio.tbd in Frameworks */,
 				CE6669892C68D2B70081ED67 /* DriverKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,7 +104,6 @@
 		CE66697F2C68D2630081ED67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEF36BAD2D144D3B00D60B0D /* libswift_stdio.tbd */,
 				CE66699B2C68D5190081ED67 /* USBDriverKit.framework */,
 				CE6669802C68D2630081ED67 /* SystemExtensions.framework */,
 				CE6669882C68D2B70081ED67 /* DriverKit.framework */,
